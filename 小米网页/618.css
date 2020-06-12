@@ -1,0 +1,298 @@
+.topper{
+	height: 120px;
+	background-image: url("./images/批注 2020-06-09 144311.png");}
+li:hover{
+	color: #ff6700;
+	cursor:pointer;
+}
+.header{background-color: black;
+	height: 40px;
+}
+.header div{margin: 0 auto;
+	width: 1226px;
+}
+.header .left{float: left;}
+.header .left,.right{height: 40px;
+}
+.header .left li{display:inline-block;
+	color: white;
+	font-size: 12px;
+}
+.header .right li{display:inline-block;
+	color: white;
+	font-size: 12px;
+}
+.header .right{float: right;
+	width: 220px;
+	position: relative;
+}
+.header li{height: 20px;
+	margin: 10px 4px 10px 0px;
+	padding-right: 9px; 
+	border-right: 1px solid;
+}
+.header .last{border-style: none;
+	margin:0px;
+	padding: 0;
+	height: 40px; 
+}
+.header .app{position: relative;}
+.header .app ul{display: none;}
+.header .app ul img{width: 60px;
+	height: 60px;
+}
+.header li:hover ul{display: block;
+	position: absolute;
+	top: 10px;
+	padding-top: 20px;
+}
+.buy{background-color: #333;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 80px;
+	line-height: 40px;
+}
+.buy img{float: left;
+	height: 40px;
+	width: 40px;
+	vertical-align: bottom;
+}
+.title{height: auto;}
+.title div{margin: 0 auto;
+	width: 1226px;
+	margin-bottom: 20px;
+}
+.title .first img{float: left;}
+.title .left{width: 55px;
+	height: 55px;
+	margin-top: 30px;
+}
+.title .right{width:165px;
+	margin-top: 40px;
+	margin-left: 10px;
+}
+.title .first>ul{float: left;
+	margin-top: 50px;
+	margin-left: 10px;
+}
+.title .first li{display: inline-block;
+	height: 24px;
+	width: auto;
+	margin: auto 10px;
+	font-size: 16px;
+}
+.title .more {position: relative;}
+.title .more ul{display: none;}
+.title li:hover ul{display: block;
+	position: absolute;
+	top: 0;
+	padding-top: 20px;
+}
+.title .more li{padding: 10px;
+	width: 120px;
+	color: black;
+	background-color: white;
+	margin: 0;
+	padding: 20px 0;
+	text-align: center;
+}
+.title .more li:hover{color: green;}
+.title form{float:right;
+	margin-top: 40px;
+}
+.title .search{height: 40px;
+	width: 200px;
+	float: right;
+}
+.title .submit{vertical-align: bottom;
+	width: 44px;
+	height: 44px;
+	float: right;
+	background-image: url("images/fa-search@2x.png");
+	background-repeat: no-repeat;
+}
+.title .banner{background-image: url("images/1.jpg");
+	height: 460px;
+}
+.title .banner ul{color: white;
+	background-color: rgba(105,101,101,.6);
+	height: 460px;
+	width: 240px;
+	float: left;
+}
+.title .banner li{padding-left: 30px;
+	height: 40px;
+	width: 200px;
+	line-height: 40px;
+}
+.title .banner span{float:right;
+	padding-right: 10px;
+}
+.title .banner .first{margin-top: 25px;}
+.title .bottom{height: 160px;
+}
+.title .bottom ul{float: left;
+	width: 240px;
+	background-color: #333;
+	height: auto;
+}
+.title .bottom li{width: 80px;
+	height: 80px;
+	float: left;
+	color: white;
+	font-size: 12px;
+}
+.title .bottom li>img{width:50px;
+	height: 50px;
+	padding: 5px 15px 0px 15px;
+ }
+.title .bottom li span{padding-left: 20px;}
+.title .bottom>img{width: 300px;
+	height: 160px;
+	margin-left: 20px;
+}
+.title .bottom .first{margin-left: 35px;}
+.main{background-color:#f5f5f5;
+	height: auto;
+	padding-bottom: 40px;
+}
+.main>div{margin: 0 auto;
+	width: 1226px;
+	height: auto;
+}
+.main>div>img{margin: 20px 0;}
+.main>ul{width: 1226px;}
+.mian>ul li{display: inline-block;}
+.main .left{float: left;
+	font-size: 25px;
+	text-indent: 1em;
+}
+.main .right{float: right;
+	font-size: 16px;
+	margin-right: 10px;
+}
+.main div .product{height: auto;}
+.main .product>u,.product>img{height:614px;
+	float: left;
+}
+.main .product li{display: inline-block;
+	height: 300px;
+	background-color: white;
+	text-align: center;
+	padding: 0px 15px;
+	font-size: 12px;
+}
+.main .product li .prize{color: #ff6700;}
+.main .product li img{margin-bottom: 30px;}
+.main .product .bottom{margin-top: 20px;}
+.main .product .left{margin-left: 35px;
+	margin-right: 10px;
+}
+.main .product .small li{display: block;
+	padding: 0px;
+}
+.main .product .small .top{margin-bottom: 25px;}
+.main .product .small{float: left;}
+.main .product .little img{width: 90px;
+	height: 90px;
+	float: right;
+	margin-top: 20px;
+}
+.main .product .little{width: 230px;
+	height: 300px;
+	float: right;
+}
+.main .product .little li{height: 140px;
+	width: 200px;
+	float: right;
+	text-align: center;
+	font-size: 16px;
+}
+.main .product .little li p{margin-top: 10px;
+	color: #ff6700;
+}
+.main .product .little li h3{margin-top: 35px}
+.floot .content{width: 1226px;
+	margin: 0 auto;
+	height: auto;
+}
+.floot .content .top{width: 1226px;
+	height: auto;
+	border-bottom: solid  #ff6700 5px;
+
+}
+.floot .content .top li{display: inline-block;
+	padding: 0 60px;
+	margin: 25px 0;
+	border-left: solid  #ff6700 2px;
+	text-align: center;
+    font-size: 18px;	
+}
+.floot .content .top #right{border-right: solid  #ff6700 2px;}
+.floot div ul{float: left;
+	margin: 20px 40px 0 10px;
+	height: 200px;
+	width: 100px;
+}
+.floot div ul li{padding-top: 20px;
+	font-size: 12px;
+}
+.floot div ul .big{font-size: 18px;}
+.phone{width: 200px;
+	height: 150px;
+	padding: 0 30px;
+	margin: 40px 0px;
+	float: right;
+	text-align: center;
+	font-size: 12px;
+	border-left: solid  #ff6700 2px;
+}
+.floot .phone #top{margin-top: 20px;
+	font-size: 20px;
+	color: #ff6700;
+}
+.floot .phone p{margin: 5px 0;}
+.floot .phone #border{border: solid 2px #ff6700;
+	margin-left: 40px;
+	padding: 5px 10px;
+	width: 100px;
+}
+.floot .phone img{vertical-align: bottom;}
+.floot .content .bottom{width: 1226px;
+	height: 20px;
+	margin: 40px 0;
+}
+.floot .content .bottom li{display: inline-block;
+	font-size: 13px;
+	padding-right: 6px;
+	padding-top: 0;
+	border-right: solid 2px #333;
+}
+.floot .content #left{border-left: solid 2px #333;
+	padding-left: 6px;
+}
+.copyright p{margin: 10px auto;
+}
+.side{position: fixed;
+	top: 200px;
+	right: 0;
+}
+.side li{width: 80px;
+	height: 80px;
+	margin-top: 5px;
+	text-align: center;
+	font-size: 15px;
+	position: relative;
+}
+.side a{color: black;}
+.side img{width: 40px;
+	height: 40px;
+	margin: 0px 20px 0 20px;
+}
+.side ul{display: none;}
+.side li:hover ul{display: block;
+	position: absolute;
+	bottom: 0;
+	right: 50px;
+}
