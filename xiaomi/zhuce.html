@@ -47,6 +47,7 @@
 	</div>
 	<p id="passwordprompt" style="width: 300px; height: 20px ;margin:5px;padding-left: 10px;color: #808A87" ></p>
 	<input id="submit" style="width: 400px; height: 50px ;background:red;" type="button" name="button"  value="立即注册">
+	<input id="signin" style="width: 400px; height: 50px ;background:red;" type="button" name="button"  value="已有账号">
 	</form>
 	</div>
 </body>
@@ -98,6 +99,9 @@
 				document.getElementById("password").value=null;
 			}
 		}
+		document.getElementById("signin").onclick=function(){
+			window.open("denglu.html");
+		};
 
 	</script>
 </html>
