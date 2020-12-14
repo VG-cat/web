@@ -5,8 +5,11 @@
 	<title>小米618</title>
 	<link rel="stylesheet" type="text/css" href="./reset.css">
 	<link rel="stylesheet" type="text/css" href="./618.css">
+	<script src="animate.js"></script>
 </head>
 <body>
+	<img id="logo" class="logo" src="images/批注 2020-06-09 143430.png">
+	<img id="logo2" class="logo2" src="images/批注 2020-06-09 143430.png">
 	<div class="topper"></div>
 	<div class="header">
 		<div class="clear">
@@ -28,8 +31,8 @@
 				<li class="last">Select Location</li>
 			</ul>
 			<ul class="right">
-				<li>登录</li>
-				<li>注册</li>
+				<li id="denglu">登录</li>
+				<li id="zhuce">注册</li>
 				<li>消息通知</li>
 				<li class="last buy clear"><img src="images/d7db56d1d850113f016c95e289e36efa.png"> 购物车</li>
 			</ul>
@@ -67,7 +70,7 @@
 				<input type="text" name="search" placeholder="输入商品名称" class="search">
 			</form>
 		</div>
-		<div class="banner clear">
+		<div class="banner clear" id="banner">
 			<ul>
 				<li class="first">手机 电话卡<span>&gt;</span></li>
 				<li>电视 盒子<span>&gt;</li>
@@ -80,8 +83,15 @@
 				<li>耳机 音箱<span>&gt;</li>
 				<li>生活 箱包<span>&gt;</li>
 			</ul>
+			<div id="imgs">
+			<img src="images/1.jpg">
+			<img src="images/cms_14961187459121_kZgry.jpg">
+			<img src="images/cms_14967232984969_ZvqcS.jpg">
+			<img src="images/cms_14967339109052_bHpBY.jpg">
+			<img src="images/1.jpg">
+			</div>
 		</div>
-		<div class="bottom clear">
+		<div class="bottom clear" >
 			<ul class="clear">
 				<li><img src="images/eded6fa3b897a058163e2485532c4f10.png"><span>F码通道</span></li>
 				<li><img src="images/f4846bca6010a0deb9f85464409862af.png"><span>以旧换新</span></li>
@@ -367,4 +377,58 @@
 		<li><a href="#"><img src="images/totop.png">回顶部</a></li>
 	</ul>		
 </body>
+<script type="text/javascript">
+	var banner=document.getElementById("banner");
+	var oimglist = document.getElementById("imgs").children;
+	var denglu=document.getElementById("denglu");
+	var zhuce=document.getElementById("zhuce");
+	var logo=document.getElementById("logo");
+	var logo2=document.getElementById("logo2");
+	var index;
+	var i=0;
+	var time; 
+	function begin(){
+		time=setInterval(function(){
+		if (i==4) {
+			var j=4;
+			var time2=setInterval(function(){
+					oimglist[i-j].setAttribute("style", "display:inline-block;opacity:60");
+					j--;
+					if (j==0) {
+						clearInterval(time2);
+						i=0;
+					};
+				},5);
+			};
+		oimglist[i].setAttribute("style", "display:none;opacity:0");
+		i++;
+		},3000);
+	}
+	banner.onmouseover=function(){
+		clearInterval(time);
+	}
+	banner.onmouseout=function(){
+		begin();
+	}
+	denglu.onclick=function(){
+		window.open("denglu.html");
+	};
+	zhuce.onclick=function(){window.open("zhuce.html")};
+	function move1(){
+		var time3=setInterval(function(){
+		animate(logo,{left:Math.random()*1000,top:Math.random()*5000})
+		},1000);
+	}
+	function move2(){
+		var time4=setInterval(function(){
+		animate(logo2,{left:Math.random()*1000,top:Math.random()*5000})
+		},1000);
+	}
+	function chushihua(){
+		move1();
+		move2();
+		begin();
+	}
+	window.onload=chushihua;
+</script>
 </html>

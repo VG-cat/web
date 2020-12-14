@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录页面</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.left{
+			float: left;
+			width: 300px;
+			height: 600px;
+			margin-top: 100px;
+			font-size: 15px;
+			color: red;
+			margin-left: 50px;
+		}
+		#div{
+			float: left;
+			width: 400px;
+			height: 600px ;
+			padding:0;
+			margin-left: 200px;
+			margin-top: 100px;
+		}
+		p{
+			margin: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div id="div">
+	<form method="post" action="">
+	<div style="border-style: solid;">
+	<span style="color: #808A87;">用户名：	</span>
+	<input id="name" style="width: 300px; height: 50px ; outline: none; border-style: none;" autocomplete="off" type="text" name="name" >
+	</div>
+	<p id="nameprompt"  style="width: 300px; height: 20px ;margin:5px;padding-left: 10px;color: #808A87" ></p>
+	<div style="border-style: solid;">
+	<span style="color: #808A87;">密码：</span>
+	<input id="password" autocomplete="new-password" style="width: 300px; height: 50px ;outline: none;border-style: none;" type="password" name="password" >
+	</div>
+	<p id="passwordprompt" style="width: 300px; height: 20px ;margin:5px;padding-left: 10px;color: #808A87" ></p>
+	<input id="submit" style="width: 400px; height: 50px ;background:red;" type="button" name="button"  value="立即登录">
+	</form>
+	</div>
+</body>
+	<script type="text/javascript">
+		document.getElementById("name").onclick=function(){
+			document.getElementById("nameprompt").innerHTML="支持中文数字";
+		}
+		document.getElementById("name").onblur=function(){
+			if (document.getElementById("name").value==""||document.getElementById("name").value==null) {
+				document.getElementById("nameprompt").innerHTML="用户名不能为空";
+			}
+		}
+		document.getElementById("password").onclick=function(){
+			document.getElementById("passwordprompt").innerHTML="建议使用两种字符组合";
+		}
+		document.getElementById("password").onblur=function(){
+			if (document.getElementById("password").value==""||document.getElementById("password").value ==null) {
+				document.getElementById("passwordprompt").innerHTML="密码不能为空";
+			}
+		}
+		document.getElementById("submit").onclick=function(){
+			var nodediv=document.createElement("div");
+			var nodep=document.createElement("p");
+			var nodeimg=document.createElement("img");
+			document.body.append(nodediv);
+			nodediv.append(nodep);
+			nodediv.append(nodeimg);
+			nodeimg.setAttribute("src","images/屏幕截图 2020-12-14 120901.png");
+			nodeimg.setAttribute("style","width:1570px;height:500px;position:relative;top:-650px;z-index:9;");
+			nodediv.setAttribute("style", "width:1570px;height:800px;z-index:9999;color:blue;font-size:35px;position:relative;top:0px;");
+			nodep.setAttribute("style","background-color:red;margin:0 auto;");
+			nodep.innerHTML="登录成功！";
+			var time = setTimeout(function(){
+				window.open("xioami618.html");
+			},3000);
+		}
+	</script>
+</html>

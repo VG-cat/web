@@ -112,7 +112,17 @@ li:hover{
 	background-image: url("images/fa-search@2x.png");
 	background-repeat: no-repeat;
 }
-.title .banner{background-image: url("images/1.jpg");
+.title .banner{
+	height: 460px;
+	overflow: hidden;
+}
+.title .banner ul{
+	position: absolute;
+}
+.title .banner img{
+	float: left;
+	display: inline-block;
+	width: 1226px;
 	height: 460px;
 }
 .title .banner ul{color: white;
@@ -153,6 +163,13 @@ li:hover{
 	margin-left: 20px;
 }
 .title .bottom .first{margin-left: 35px;}
+.logo{
+	position: absolute;
+}
+.logo2{
+	position: absolute;
+	right: 0;
+}
 .main{background-color:#f5f5f5;
 	height: auto;
 	padding-bottom: 40px;

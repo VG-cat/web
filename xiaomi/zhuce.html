@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册页面</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.left{
+			float: left;
+			width: 300px;
+			height: 600px;
+			margin-top: 100px;
+			font-size: 15px;
+			color: red;
+			margin-left: 50px;
+		}
+		#div{
+			float: left;
+			width: 400px;
+			height: 600px ;
+			padding:0;
+			margin-left: 200px;
+			margin-top: 100px;
+		}
+		p{
+			margin: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div id="div">
+	<form method="post" action="">
+	<div style="border-style: solid;">
+	<span style="color: #808A87;">用户名：	</span>
+	<input id="name" style="width: 300px; height: 50px ; outline: none; border-style: none;" autocomplete="off" type="text" name="name" >
+	</div>
+	<p id="nameprompt"  style="width: 300px; height: 20px ;margin:5px;padding-left: 10px;color: #808A87" ></p>
+	性别：
+	<input style="width: 150px; height: 20px ;margin-bottom: 30px;" type="radio" value="male" name="1" checked="checked">男
+	<input style="width: 150px; height: 20px ;margin-bottom: 30px;" type="radio" value="famale" name="1">女
+	<div style="border-style: solid;">
+	<span style="color: #808A87;">设置密码：</span>
+	<input id="password" autocomplete="new-password" style="width: 300px; height: 50px ;outline: none;border-style: none;" type="password" name="password" >
+	</div>
+	<p id="passwordprompt" style="width: 300px; height: 20px ;margin:5px;padding-left: 10px;color: #808A87" ></p>
+	<input id="submit" style="width: 400px; height: 50px ;background:red;" type="button" name="button"  value="立即注册">
+	</form>
+	</div>
+</body>
+	<script type="text/javascript">
+		document.getElementById("name").onclick=function(){
+			document.getElementById("nameprompt").innerHTML="支持中文数字";
+		}
+		document.getElementById("name").onblur=function(){
+			if (document.getElementById("name").value==""||document.getElementById("name").value==null) {
+				document.getElementById("nameprompt").innerHTML="用户名不能为空";
+			}
+		}
+		document.getElementById("password").onclick=function(){
+			document.getElementById("passwordprompt").innerHTML="建议使用两种字符组合";
+		}
+		document.getElementById("password").onblur=function(){
+			if (document.getElementById("password").value==""||document.getElementById("password").value ==null) {
+				document.getElementById("passwordprompt").innerHTML="密码不能为空";
+			}
+		}
+		var username;
+		var userpassword;
+		var temp=0;
+		var nodediv=document.createElement("div");
+		document.body.append(nodediv);
+		document.getElementById("submit").onclick=function(){
+			if (temp==0) {
+				temp=1;
+				username=document.getElementById("name").value;
+				userpassword=document.getElementById("password").value;
+				document.getElementById("name").value=null;
+				document.getElementById("password").value=null;
+				nodediv.innerHTML="请重新输入！";
+				console.log(username);
+				console.log("222");
+			}
+			else if (temp==1) {
+				temp=0;
+				if ( username==document.getElementById("name").value&&userpassword==document.getElementById("password").value) {
+					nodediv.innerHTML="注册成功！";
+					var time = setTimeout(function(){
+				window.open("xioami618.html");
+				},3000);
+				}
+				else{
+					nodediv.innerHTML="注册失败！密码或用户名错误!";
+				}
+				document.getElementById("name").value=null;
+				document.getElementById("password").value=null;
+			}
+		}
+
+	</script>
+</html>
