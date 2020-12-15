@@ -28,9 +28,15 @@
 		p{
 			margin: 30px;
 		}
+		#big{
+			background-image: url("images/屏幕截图 2020-12-14 120901.png");
+			height: 700px;
+			width: 1550px;
+		}
 	</style>
 </head>
 <body>
+	<div id="big">
 	<div id="div">
 	<form method="post" action="">
 	<div style="border-style: solid;">
@@ -45,6 +51,7 @@
 	<p id="passwordprompt" style="width: 300px; height: 20px ;margin:5px;padding-left: 10px;color: #808A87" ></p>
 	<input id="submit" style="width: 400px; height: 50px ;background:red;" type="button" name="button"  value="立即登录">
 	</form>
+	</div>
 	</div>
 </body>
 	<script type="text/javascript">
@@ -72,8 +79,8 @@
 			nodediv.append(nodep);
 			nodediv.append(nodeimg);
 			nodeimg.setAttribute("src","images/屏幕截图 2020-12-14 120901.png");
-			nodeimg.setAttribute("style","width:1570px;height:500px;position:relative;top:-650px;z-index:9;");
-			nodediv.setAttribute("style", "width:1570px;height:800px;z-index:9999;color:blue;font-size:35px;position:relative;top:0px;");
+			nodeimg.setAttribute("style","width:1570px;height:500px;position:relative;top:0px;z-index:99999;");
+			nodediv.setAttribute("style", "width:1570px;height:800px;z-index:9999;color:blue;font-size:35px;position:absolute;top:0px;text-align:center;");
 			nodep.setAttribute("style","background-color:red;margin:0 auto;");
 			nodep.innerHTML="登录成功！";
 			var time = setTimeout(function(){
